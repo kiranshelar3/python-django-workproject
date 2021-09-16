@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online food || myfood.com</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1150px )" href="/static/phone.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/static/logo2.png" alt="myfood.com">
+
+        </div>
+        <ul>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#servicescont">Services</a></li>
+            <li class="items"><a href="#clientsection">Our clients</a></li>
+            <li class="items"><a href="#contact">Contact us</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="primaryh">Welcome to Myfood</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda maxime perferendis consequatur
+            repudiandae alias sunt rem nesciunt voluptas expedita.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente saepe quasi aliquid fugiat provident
+            velit.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <hr>
+    <section id="servicescont">
+        <h1 class="primaryh center"> Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="/static/pia1.jpg" alt="">
+                <h2 class="secondaryh center">Food Catering</h2>
+                <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe minus,
+                    excepturi ea illum
+                    dolorem unde quis cum error at mollitia facilis, corporis laudantium soluta. </p>
+
+            </div>
+            <div class="box">
+                <img src="/static/pia2.jpg" alt="">
+                <h2 class="secondaryh center">Event Catering </h2>
+                <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe minus,
+                    excepturi ea illum
+                    dolorem unde quis cum error at mollitia facilis, corporis laudantium soluta. </p>
+
+            </div>
+            <div class="box">
+                <img src="/static/pia3.jpg" alt="">
+                <h2 class="secondaryh center">Food delivery</h2>
+                <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe minus,
+                    excepturi ea illum
+                    dolorem unde quis cum error at mollitia facilis, corporis laudantium soluta. </p>
+
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section id="clientsection">
+        <h1 class="primaryh center">Our Clients</h1>
+        <div id="clients">
+            <div class="clientitem">
+                <img src="/static/intel.png" alt="">
+            </div>
+            <div class="clientitem">
+                <img src="/static/hp.png" alt="">
+            </div>
+            <div class="clientitem">
+                <img src="/static/amaon.png" alt="">
+            </div>
+            <div class="clientitem">
+                <img src="/static/bosch.png" alt="">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="contact">
+        <h1 class="primaryh center">Contact Us</h1>
+        <div id="contactbox">
+            <form method="POST" method="/index"> 
+                {% csrf_token %}
+                <div class="formgroup">
+                    <label for="name">Name:
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="formgroup">
+                    <label for="email">Email:
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="formgroup">
+                    <label for="phoneno">Phone no:
+                    </label>
+                    <input type="text" name="phoneno" id="phone no" placeholder="Enter your phone no.">
+                </div>
+                <div class="formgroup">
+                    <label for="Message">Message:
+                    </label>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                    <button id="submit" name="submit" class="formgroup">Submit</button>
+                    
+
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.myfood.com. all rights reserverd.
+
+        </div>
+    </footer>
+</body>
+
+</html>
